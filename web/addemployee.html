@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            function sub()
+            {
+                var v=confirm("Do You wish to continue?");
+                
+                if(v===true) return true;
+                
+                else  return false;
+           
+            }
+        </script>
+        <title>Add Employee Record</title>
+    </head>
+    <body background="15223_2d_black-white.jpg">
+    <center>
+        <font size="10" face="stencil" >Add Employee Record</font>
+        <br><hr size="8"><br>
+        <form action="http://localhost:8084/WebApplication1/addemployee" method="post" onsubmit="sub();">
+            
+            <font size="4" face="lucida handwriting">
+            Enter Name:<input type="text" name="name"><br>
+            Enter Phone:<input type="text" name="phone"><br>
+            Select Type:<input type="radio" name="type" value="cook">Cook
+            <input type="radio" name="type" value="guard">Guard
+            <input type="radio" name="type" value="maid">Maid
+            <input type="radio" name="type" value="warden">Warden<br>
+            Enter Employee ID:<input type="text" name="id"><br>
+            Enter Salary:<input type="text" name="salary"><br>
+            Select Shift:<input type="radio" name="shift" value="day">Day
+            <input type="radio" name="shift" value="night">Night<br>
+           <input type="submit" value="Add">
+           
+        </form></center>
+        </font>
+        
+            
+    </body>
+</html>

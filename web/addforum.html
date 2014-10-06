@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function validate()
+            {
+                if(document.form1.formno.value=="")
+                {alert("Please Enter Form No!");
+                return false;}
+            if(document.form1.topic.value=="")
+                {alert("Please Enter Topic!");
+                return false;}
+             if(document.form1.content.value=="")
+                {alert("Please Enter Topic!");
+                return false;}
+            }
+        </script>
+        <title>Create Forum</title>
+        
+    </head>
+    <body background="blueblack.jpg">
+        <form action="addforum" name="form1" onsubmit="return validate();" method="get">
+        
+            <font color="white" size="5">
+            Form No.:<br>
+             <textarea style="font-size:20" name="formno" cols="2" rows="1"></textarea><br>
+            Topic:<br>
+            <textarea style="font-size:20" name="topic" cols="80" rows="1"></textarea><br>
+            Content:<br><textarea style="font-size:20"  name="content" cols="80" rows="15"></textarea></font>
+            <br><br><input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
